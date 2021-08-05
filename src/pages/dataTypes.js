@@ -2,18 +2,20 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 
-function DataTypes(props) {
+function DataTypes({dataTypes}) {
 
   return (
         <>
 
-        {props.dataTypes.map(each => {
+        <ul>
+        {dataTypes.map(each => {
           return (
             <div>
-            <h1>{each}</h1>
+            <li>{each}</li>
             </div>
           )
         })}
+        </ul>
         {/* {dataTypes.forEach((each_type) => { 
           return (<h1>each_type</h1>)
           }
