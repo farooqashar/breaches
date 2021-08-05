@@ -12,9 +12,15 @@ useEffect(() => {
   .then(data => setDataTypes(data))
   },[]);
 
+useEffect(() => {
+  fetch("https://haveibeenpwned.com/api/v3/breaches")
+  .then(response => response.json())
+  .then(data => setBreaches(data))
+  },[]);
+
   return (
     <div className="App">
-        {console.log(dataTypes)}
+        {console.log(breaches)}
     </div>
   );
 }
