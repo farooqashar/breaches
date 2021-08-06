@@ -10,16 +10,16 @@ function Breaches({ breaches }) {
           <Card variant="outlined">
             <CardContent>
               <h2 class="text-danger">
-                {each_breach["Name"]} {each_breach["Domain"]}
+                {each_breach["Name"]} | {each_breach["Domain"]}
               </h2>
 
-              {/* <h6>Capital: {each_breach.capital}</h6>
+              <h5>{each_breach["Description"]}</h5>
 
-          <h6>Phone Extension: {each_breach.phone} </h6>
+              <h6>Breach Date: {each_breach["BreachDate"]}</h6>
 
-          <h6>Country Code: {each_breach.code}</h6>
+              <h6>Compromised Data Classes: {each_breach["DataClasses"].map(each => {return(<h6>{each}</h6>)})}</h6>
 
-          <h6>Currency: {each_breach.currency}</h6> */}
+
             </CardContent>
           </Card>
         );
