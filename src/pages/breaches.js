@@ -1,13 +1,20 @@
 import React, { useState, useEffect } from "react";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
+import { Link } from "react-router-dom";
 
 function Breaches({ breaches }) {
   return (
     <div className="container">
 
       <h1>Breaches</h1>
+      <p className="text-info">There have been many breaches over time.</p>
       <br/>
+        <div className="container">
+        <Link to="/">
+          <button className="btn btn-secondary">Go Back</button>
+        </Link>
+      </div>
       <br/>
       {breaches.map((each_breach) => {
         return (
