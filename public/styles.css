@@ -112,29 +112,28 @@
     margin: 0;
     padding: 0;
   }
-  
+   
   li {
     font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
     border-bottom: 1px dotted #ccc;
   }
-  
+   
   li:last-child {
     border: none;
   }
-  
-  li a {
+   
+  li {
     text-decoration: none;
     color: blue;
     display: block;
     width: 100%;
-  
+   
     -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
     -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
     -o-transition: font-size 0.3s ease, background-color 0.3s ease;
     -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
     transition: font-size 0.3s ease, background-color 0.3s ease;
   }
-  
   .eachl {
     color: cornflowerblue;
     animation-name: each;
