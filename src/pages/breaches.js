@@ -19,7 +19,6 @@ function Breaches({ breaches }) {
 
               <h6>Compromised Data Classes: {each_breach["DataClasses"].map(each => {return(<h6>{each}</h6>)})}</h6>
 
-
             </CardContent>
           </Card>
         );
