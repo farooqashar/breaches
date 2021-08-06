@@ -22,7 +22,7 @@ function DataTypes({ dataTypes }) {
       <br />
       <div className="container">
         <Link to="/">
-          <button class="btn btn-primary">Go Back</button>
+          <button class="btn btn-secondary">Go Back</button>
         </Link>
       </div>
     </div>
