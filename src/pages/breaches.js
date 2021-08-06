@@ -18,12 +18,14 @@ function Breaches({ breaches }) {
                 {each_breach["Name"]} | {each_breach["Domain"]}
               </h2>
 
-              <div dangerouslySetInnerHTML={{ __html: each_breach["Description"] }}>
-              </div>
+              <h6 dangerouslySetInnerHTML={{ __html: each_breach["Description"] }}>
+              </h6>
 
-              <h6>Breach Date: {each_breach["BreachDate"]}</h6>
+              <h6><i className="ssm">Breach Date:</i> {each_breach["BreachDate"]}</h6>
 
-              <h6>Compromised Data Classes: {each_breach["DataClasses"].map(each => {return(<h6>{each}</h6>)})}</h6>
+              <h6><i className="ssm">Compromised Data Classes:</i> 
+              <br/> <br/>
+              {each_breach["DataClasses"].map(each => {return(<h6>{each}</h6>)})}</h6>
 
             </CardContent>
           </Card>
@@ -32,7 +34,6 @@ function Breaches({ breaches }) {
           </>
         );
       })}
-      }
     </div>
   );
 }
