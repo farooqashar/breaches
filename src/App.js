@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home.js";
 import DataTypes from "./pages/dataTypes.js";
 import Breaches from "./pages/breaches.js";
