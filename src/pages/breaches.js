@@ -4,16 +4,22 @@ import CardContent from "@material-ui/core/CardContent";
 
 function Breaches({ breaches }) {
   return (
-    <>
+    <div className="container">
+
+      <h1>Breaches</h1>
+      <br/>
+      <br/>
       {breaches.map((each_breach) => {
         return (
+          <>
           <Card variant="outlined">
             <CardContent>
               <h2 class="text-danger">
                 {each_breach["Name"]} | {each_breach["Domain"]}
               </h2>
 
-              <h5>{each_breach["Description"]}</h5>
+              <div dangerouslySetInnerHTML={{ __html: each_breach["Description"] }}>
+              </div>
 
               <h6>Breach Date: {each_breach["BreachDate"]}</h6>
 
@@ -21,10 +27,13 @@ function Breaches({ breaches }) {
 
             </CardContent>
           </Card>
+          <br/>
+          <br/>
+          </>
         );
       })}
       }
-    </>
+    </div>
   );
 }
 
